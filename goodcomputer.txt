@@ -1,0 +1,54 @@
+CPU Specific
+
+Misc
+nop
+
+Registry Instructions
+ldi (Load Intermediate)
+mov (Move)
+
+ALU Operations
+add (Add)
+adi (Add Intermediate)
+sub (Sub)
+sbi (Sub Intermediate)
+mul (Multiply)
+mli (Multiply Intermediate)
+div (Divide)
+dvi (Divide Intermediate)
+and (And)
+xor (Xor)
+or (Or)
+not (Not)
+rft (Right Shift)
+lft (Left Shift)
+
+Memory Operations
+ins (Insert to memory)
+ini (Insert Intermediate)
+ext (Extract from memory)
+exi (Extract Intermediate)
+
+Instruction Pointer Operations
+jmp (Jump)
+bhz (Branch If Zero)
+bhc (Branch If Carry)
+cal (Call)
+clz (Call If Zero)
+clc (Call If Carry)
+ret (Return)
+
+Port Operations
+pdr (Port Data Read)
+pdw (Port Data Write)
+pdi (Load Port Info To Register)
+pck (Port Clock)
+
+REG
+ALU
+PC
+STK
+PRT
+ROM
+BUF
+RTR
