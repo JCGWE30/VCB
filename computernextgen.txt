@@ -1,0 +1,65 @@
+Registry Instructions
+ldi (Load Intermediate) - Load an intermediate Value into the registry file
+mov (Move) - Move a value within the registry file to another index (The original value remains unchanged)
+
+ALU Operations
+add (Add) - Add 2 numbers
+adi (Add Intermediate) - Add 2 numbers
+sub (Sub) - Subtract 2 numbers
+sbi (Sub Intermediate) - Subtract 2 numbers
+mul (Multiply) - Multiply 2 numbers together
+mli (Multiply Intermediate) - Multiply 2 numbers together
+div (Divide) - Divide 2 numbers
+dvi (Divide Intermediate) - Divide 2 numbers
+and (And) - Store flags for comparison
+xor (Xor) - Store flags for comparison
+or (Or) - Store flags for comparison
+not (Not) - Store flags for comparison
+rft (Right Shift) - Right shift
+lft (Left Shift) - Left shift
+
+Memory Operations
+ins (Insert to memory) - Insert a value into the memory
+ext (Extract from memory) - Extract a value from the memory
+
+Instruction Pointer Operations
+jmp (Jump) - Jump to a specified address
+bch (Branch) - Jump to a specified address if a condition is met
+
+Stack Operations
+psh (Push) - Push a value from the registry file into the Stack
+pop (Pop) - Pop a value from the registry file into the Stack
+que (Queue) - Enqueue the current address into the stack
+cal (Call) - Enqueue the current address into the stack, and jump to a specified address
+ret (Return) - Pop and jump to the top value in the stack
+
+Port Operations
+pdr (Port Data Read) - Reads the port value to the registry file
+pdw (Port Data Write) - Writes a value in the registry file to the port data
+pdh (Port Data Header) - Reads the port data header to the registry file
+pdi (Port Data Interrupt) - Sets the port Interrupt Address (If set to 0 will be void).
+
+Port Device Specifications
+Headers consist of a 2 ascii letter identifier (1 bits)
+
+The data in and data out lines consist of 16 bits of data each
+
+The port clock line is pulsed whenever a clock is sent
+
+The port interrupt line when pulsed by the device will cause an interrupt in the system
+
+
+
+Reg file
+
+Memory
+
+Buffer
+
+Program Counter
+
+ALU
+
+Stack
+
+Port Interface
